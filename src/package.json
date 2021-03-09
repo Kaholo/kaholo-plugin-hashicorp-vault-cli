@@ -1,0 +1,12 @@
+{
+    "name": "kaholo-plugin-hashicorp-vault-cli",
+    "version": "1.0.0",
+    "description": "Kaholo plaugin for logging in to hashicorp Vault using the CLI",
+    "main": "app.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Amit Alon",
+    "license": "ISC",
+    "dependencies": {}
+  }
