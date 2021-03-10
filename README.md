@@ -3,7 +3,6 @@ Kaholo plugin for using the vault login cli command, that authenticates users to
 
 ## How To Use ##
 Make sure you have the Hashicorp Vault CLI installed on your computer. 
-Prior to using make sure you configure your vault server address using,
 
 ## Settings ##
 
