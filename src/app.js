@@ -21,11 +21,11 @@ async function runCLICommand(command, vaultUrl){
 }
 
 async function login(action, settings){
-	const token = action.params.token || settings.token;
+	const token = action.params.token || settings.token || "";
 	if (!token){
 		throw "token was not provided";
 	}
-	const vaultUrl = (settings.vaultUrl || "").trim();
+	const vaultUrl = (action.params.vaultUrl || settings.vaultUrl || "").trim();
 
 	const loginCmd = `vault login ${token}`;
 	return runCLICommand(loginCmd, vaultUrl);

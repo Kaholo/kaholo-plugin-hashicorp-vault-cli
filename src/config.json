@@ -4,7 +4,7 @@
   "imgUrl": "logo.png",
   "execProgram": "node",
   "main": "app.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hashicorp Vault CLI Plugin",
   "settings": [
     {
@@ -23,6 +23,11 @@
       "name" : "login",
       "viewName": "Login",
       "params": [
+        {
+          "name": "vaultUrl",
+          "viewName": "Vault URL",
+          "type": "string"
+        },
         {
           "name":"token",
           "viewName":"Token",
