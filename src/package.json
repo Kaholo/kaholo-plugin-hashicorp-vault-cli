@@ -1,6 +1,6 @@
 {
     "name": "kaholo-plugin-hashicorp-vault-cli",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Kaholo plaugin for logging in to hashicorp Vault using the CLI",
     "main": "app.js",
     "scripts": {
