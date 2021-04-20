@@ -1,5 +1,4 @@
 const child_process = require("child_process");
-const { ENOBUFS } = require("constants");
 
 async function runCLICommand(command, vaultUrl){
 	return new Promise((resolve,reject) => {
@@ -12,18 +11,12 @@ async function runCLICommand(command, vaultUrl){
 			}
 			return resolve("success"); // not printing stdout, because -no-print=true flag doesn't work
 		};
-		
-		let env = {
-			'VAULT_CONFIG_PATH': '/root/.vault'
-		}
 
 		if (vaultUrl){
-			env['VAULT_ADDR'] = vaultUrl;
+			process.env['VAULT_ADDR'] = vaultUrl;
 		}
 		
-		child_process.exec(command, {
-			env: env
-		}, callback);
+		child_process.exec(command, {env: process.env}, callback);
 	})
 }
 
