@@ -4,7 +4,7 @@
   "imgUrl": "logo.png",
   "execProgram": "node",
   "main": "app.js",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "Hashicorp Vault CLI Plugin",
   "settings": [
     {
@@ -13,14 +13,14 @@
       "type": "string"
     },
     {
-      "name":"token",
-      "viewName":"Token",
-      "type":"vault"
+      "name": "token",
+      "viewName": "Token",
+      "type": "vault"
     }
   ],
   "methods": [
     {
-      "name" : "login",
+      "name": "login",
       "viewName": "Login",
       "params": [
         {
@@ -29,12 +29,12 @@
           "type": "string"
         },
         {
-          "name":"token",
-          "viewName":"Token",
-          "type":"vault"
+          "name": "token",
+          "viewName": "Token",
+          "type": "vault"
         }
-      ]    
+      ]
     }
-  ]
+  ],
+  "category": "SECRETS"
 }
-  
